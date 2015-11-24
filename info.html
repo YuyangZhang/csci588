@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="img/issac.ico"/>
+    <title>Registration -- On the Road</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/prettify.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">On the Road</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="input-group" style="width:500px;float:left;padding-top:10px;"> 
+                    <div class="input-group-btn">
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for your destination">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                   <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="destination.html">Destinations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="plan.html">Plan</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="articlelist.html">Dairy</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="blog.html">MyBlog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div style="position:absolute;margin:300px 0 0 950px" id="fin">
+        <a onclick="contact()"><img src="img/finish.jpg" class="image-circle" style="width:150px;height:150px;"></a>
+        <h3 style="padding-left:25px">FINISH</h3>
+    </div>
+    
+    <section style="background-image:url(img/bgi.jpg);height:700px;padding-bottom:-20px">
+    <div class='container' style="background-color:white;padding-left:40px;height:580px;color:rbg(47,120,204);" id='form'>
+		
+			<section id="wizard" style="margin-top:-100px;">
+			  <div class="page-header">
+	            <h3>Fill in your information to complete the registration.</h3>
+	          </div>
+                <form id="commentForm" method="get" action="" class="form-horizontal">
+				<div id="rootwizard">
+					<div class="navbar">
+					  <div class="navbar-inner">
+					    <div class="container">
+                            <ul>
+                                <li><a href="#tab1" data-toggle="tab">Basic Info</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Travle Experiences</a></li>
+                                <li><a href="#tab3" data-toggle="tab">Travle Plans</a></li>
+                            </ul>
+                         </div>
+					  </div>
+					</div>
+					<div class="tab-content">
+					    <div class="tab-pane" id="tab1">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Nickname:</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="required email form-control" id="inputPassword3" placeholder="">
+                                </div>
+                              </div>
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Gender:</label>
+                                <div class="col-sm-6">
+                                  <label class="radio-inline">
+                                  <input type="radio" id="inlineCheckbox1" value="option1"> Male
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" id="inlineCheckbox2" value="option2"> Female
+                                </label>
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Email:</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="required email form-control" id="inputPassword3" placeholder=" email@example.com">
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Home Country:</label>
+                                <div class="col-sm-6">
+                                  <select class="form-control">
+                                    <option value="">-- Select Country --</option>
+                                    <option value="189">Afghanistan</option>
+                                    <option value="38">Albania</option>
+                                    <option value="83">Algeria</option>
+                                    <option value="208">Andorra</option>
+                                    <option value="147">Angola</option>
+                                    <option value="1">Anguilla</option>
+                                    <option value="126">Antarctica</option>
+                                    <option value="2">Antigua and Barbuda</option>
+                                    <option value="61">Argentina</option>
+                                    <option value="190">Armenia</option>
+                                    <option value="3">Aruba</option>
+                                    <option value="102">Australia</option>
+                                    <option value="209">Austria</option>
+                                    <option value="191">Azerbaijan</option>
+                                    <option value="4">Bahamas</option>
+                                    <option value="192">Bahrain</option>
+                                    <option value="129">Bangladesh</option>
+                                    <option value="5">Barbados</option>
+                                    <option value="39">Belarus</option>
+                                    <option value="210">Belgium</option>
+                                    <option value="62">Belize</option>
+                                    <option value="148">Benin</option>
+                                    <option value="97">Bermuda</option>
+                                    <option value="130">Bhutan</option>
+                                    <option value="63">Bolivia</option>
+                                    <option value="40">Bosnia and Herzegovina</option>
+                                    <option value="149">Botswana</option>
+                                    <option value="64">Brazil</option>
+                                    <option value="23">British Virgin Islands</option>
+                                    <option value="131">Brunei</option>
+                                    <option value="41">Bulgaria</option>
+                                    <option value="150">Burkina Faso</option>
+                                    <option value="151">Burundi</option>
+                                    <option value="132">Cambodia</option>
+                                    <option value="152">Cameroon</option>
+                                    <option value="98">Canada</option>
+                                    <option value="153">Cape Verde</option>
+                                    <option value="6">Cayman Islands</option>
+                                    <option value="154">Central African Republic</option>
+                                    <option value="84">Chad</option>
+                                    <option value="65">Chile</option>
+                                    <option value="25">China</option>
+                                    <option value="103">Christmas Island</option>
+                                    <option value="104">Cocos (Keeling) Islands</option>
+                                    <option value="66">Colombia</option>
+                                    <option value="155">Comoros</option>
+                                    <option value="157">Congo (Dem. Rep.)</option>
+                                    <option value="156">Congo (Rep.)</option>
+                                    <option value="105">Cook Islands</option>
+                                    <option value="67">Costa Rica</option>
+                                    <option value="158">Côte d&#039;Ivoire</option>
+                                    <option value="42">Croatia</option>
+                                    <option value="7">Cuba</option>
+                                    <option value="43">Cyprus</option>
+                                    <option value="44">Czech Republic</option>
+                                    <option value="211">Denmark</option>
+                                    <option value="85">Djibouti</option>
+                                    <option value="8">Dominica</option>
+                                    <option value="9">Dominican Republic</option>
+                                    <option value="133">East Timor</option>
+                                    <option value="68">Ecuador</option>
+                                    <option value="86">Egypt</option>
+                                    <option value="69">El Salvador</option>
+                                    <option value="159">Equatorial Guinea</option>
+                                    <option value="87">Eritrea</option>
+                                    <option value="45">Estonia</option>
+                                    <option value="88">Ethiopia</option>
+                                    <option value="70">Falkland Islands</option>
+                                    <option value="212">Faroe Islands</option>
+                                    <option value="106">Fiji</option>
+                                    <option value="213">Finland</option>
+                                    <option value="214">France</option>
+                                    <option value="71">French Guiana</option>
+                                    <option value="107">French Polynesia</option>
+                                    <option value="160">Gabon</option>
+                                    <option value="161">Gambia</option>
+                                    <option value="46">Georgia</option>
+                                    <option value="215">Germany</option>
+                                    <option value="162">Ghana</option>
+                                    <option value="216">Gibraltar</option>
+                                    <option value="47">Greece</option>
+                                    <option value="217">Greenland</option>
+                                    <option value="10">Grenada</option>
+                                    <option value="11">Guadeloupe</option>
+                                    <option value="99">Guam</option>
+                                    <option value="72">Guatemala</option>
+                                    <option value="218">Guernsey</option>
+                                    <option value="163">Guinea</option>
+                                    <option value="164">Guinea-Bissau</option>
+                                    <option value="73">Guyana</option>
+                                    <option value="12">Haiti</option>
+                                    <option value="74">Honduras</option>
+                                    <option value="26">Hong Kong</option>
+                                    <option value="48">Hungary</option>
+                                    <option value="219">Iceland</option>
+                                    <option value="134">India</option>
+                                    <option value="135">Indonesia</option>
+                                    <option value="193">Iran</option>
+                                    <option value="194">Iraq</option>
+                                    <option value="220">Ireland</option>
+                                    <option value="221">Isle of Man</option>
+                                    <option value="195">Israel</option>
+                                    <option value="222">Italy</option>
+                                    <option value="13">Jamaica</option>
+                                    <option value="27">Japan</option>
+                                    <option value="223">Jersey</option>
+                                    <option value="196">Jordan</option>
+                                    <option value="28">Kazakhstan</option>
+                                    <option value="165">Kenya</option>
+                                    <option value="108">Kiribati</option>
+                                    <option value="197">Kuwait</option>
+                                    <option value="29">Kyrgyzstan</option>
+                                    <option value="136">Laos</option>
+                                    <option value="49">Latvia</option>
+                                    <option value="198">Lebanon</option>
+                                    <option value="166">Lesotho</option>
+                                    <option value="167">Liberia</option>
+                                    <option value="89">Libya</option>
+                                    <option value="224">Liechtenstein</option>
+                                    <option value="50">Lithuania</option>
+                                    <option value="225">Luxembourg</option>
+                                    <option value="30">Macao</option>
+                                    <option value="51">Macedonia</option>
+                                    <option value="168">Madagascar</option>
+                                    <option value="169">Malawi</option>
+                                    <option value="137">Malaysia</option>
+                                    <option value="138">Maldives</option>
+                                    <option value="90">Mali</option>
+                                    <option value="226">Malta</option>
+                                    <option value="109">Marshall Islands</option>
+                                    <option value="14">Martinique</option>
+                                    <option value="91">Mauritania</option>
+                                    <option value="170">Mauritius</option>
+                                    <option value="171">Mayotte</option>
+                                    <option value="75">Mexico</option>
+                                    <option value="110">Micronesia</option>
+                                    <option value="52">Moldova</option>
+                                    <option value="227">Monaco</option>
+                                    <option value="31">Mongolia</option>
+                                    <option value="53">Montenegro</option>
+                                    <option value="15">Montserrat</option>
+                                    <option value="92">Morocco</option>
+                                    <option value="172">Mozambique</option>
+                                    <option value="139">Myanmar</option>
+                                    <option value="173">Namibia</option>
+                                    <option value="111">Nauru</option>
+                                    <option value="140">Nepal</option>
+                                    <option value="228">Netherlands</option>
+                                    <option value="16">Netherlands Antilles</option>
+                                    <option value="112">New Caledonia</option>
+                                    <option value="113">New Zealand</option>
+                                    <option value="76">Nicaragua</option>
+                                    <option value="93">Niger</option>
+                                    <option value="174">Nigeria</option>
+                                    <option value="114">Niue</option>
+                                    <option value="115">Norfolk Island</option>
+                                    <option value="32">North Korea</option>
+                                    <option value="116">Northern Mariana Islands</option>
+                                    <option value="229">Norway</option>
+                                    <option value="199">Oman</option>
+                                    <option value="200">Pakistan</option>
+                                    <option value="141">Palau</option>
+                                    <option value="201">Palestine</option>
+                                    <option value="77">Panama</option>
+                                    <option value="117">Papua New Guinea</option>
+                                    <option value="78">Paraguay</option>
+                                    <option value="79">Peru</option>
+                                    <option value="142">Philippines</option>
+                                    <option value="118">Pitcairn Islands</option>
+                                    <option value="54">Poland</option>
+                                    <option value="230">Portugal</option>
+                                    <option value="17">Puerto Rico</option>
+                                    <option value="202">Qatar</option>
+                                    <option value="231">Réunion</option>
+                                    <option value="55">Romania</option>
+                                    <option value="56">Russia</option>
+                                    <option value="175">Rwanda</option>
+                                    <option value="176">Saint Helena</option>
+                                    <option value="18">Saint Kitts and Nevis</option>
+                                    <option value="19">Saint Lucia</option>
+                                    <option value="100">Saint Pierre and Miquelon</option>
+                                    <option value="20">Saint Vincent and the Grenadines</option>
+                                    <option value="119">Samoa</option>
+                                    <option value="232">San Marino</option>
+                                    <option value="177">São Tomé and Príncipe</option>
+                                    <option value="203">Saudi Arabia</option>
+                                    <option value="178">Senegal</option>
+                                    <option value="57">Serbia</option>
+                                    <option value="179">Seychelles</option>
+                                    <option value="180">Sierra Leone</option>
+                                    <option value="143">Singapore</option>
+                                    <option value="58">Slovakia</option>
+                                    <option value="59">Slovenia</option>
+                                    <option value="120">Solomon Islands</option>
+                                    <option value="181">Somalia</option>
+                                    <option value="182">South Africa</option>
+                                    <option value="127">South Georgia &amp; South Sandwich Islands</option>
+                                    <option value="33">South Korea</option>
+                                    <option value="238">South Sudan</option>
+                                    <option value="233">Spain</option>
+                                    <option value="144">Sri Lanka</option>
+                                    <option value="94">Sudan</option>
+                                    <option value="80">Suriname</option>
+                                    <option value="128">Svalbard</option>
+                                    <option value="183">Swaziland</option>
+                                    <option value="234">Sweden</option>
+                                    <option value="235">Switzerland</option>
+                                    <option value="204">Syria</option>
+                                    <option value="34">Taiwan</option>
+                                    <option value="35">Tajikistan</option>
+                                    <option value="184">Tanzania</option>
+                                    <option value="145">Thailand</option>
+                                    <option value="185">Togo</option>
+                                    <option value="121">Tokelau</option>
+                                    <option value="122">Tonga</option>
+                                    <option value="21">Trinidad and Tobago</option>
+                                    <option value="95">Tunisia</option>
+                                    <option value="205">Turkey</option>
+                                    <option value="36">Turkmenistan</option>
+                                    <option value="22">Turks and Caicos Islands</option>
+                                    <option value="123">Tuvalu</option>
+                                    <option value="24">U.S. Virgin Islands</option>
+                                    <option value="186">Uganda</option>
+                                    <option value="60">Ukraine</option>
+                                    <option value="206">United Arab Emirates</option>
+                                    <option value="236">United Kingdom</option>
+                                    <option value="101" selected="selected">United States of America</option>
+                                    <option value="81">Uruguay</option>
+                                    <option value="37">Uzbekistan</option>
+                                    <option value="124">Vanuatu</option>
+                                    <option value="237">Vatican City</option>
+                                    <option value="82">Venezuela</option>
+                                    <option value="146">Vietnam</option>
+                                    <option value="125">Wallis and Futuna</option>
+                                    <option value="96">Western Sahara</option>
+                                    <option value="207">Yemen</option>
+                                    <option value="187">Zambia</option>
+                                    <option value="188">Zimbabwe</option>  
+                                  </select>
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Current Address:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="required email form-control" id="inputPassword3" placeholder="">
+                                </div>
+                              </div>
+                              
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">Interests:</label>
+							    <div class="col-sm-6">
+							         <input type="text" class="required form-control" id="inputPassword3" placeholder="">
+                                </div>
+							  </div>
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">About Me:</label>
+							    <div class="col-sm-6">
+							      <textarea rows="3" class="form-control" placeholder="Anything you want to say about yourself"></textarea>
+							    </div>
+							  </div>
+					    </div>
+					    <div class="tab-pane" id="tab2">
+					      <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Places visited:</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                                </div>
+                              </div>
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">Favorite City:</label>
+							    <div class="col-sm-6">
+							      <input type="text" class="form-control" id="inputPassword3" placeholder="">
+							    </div>
+							  </div>
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">Time spent on travel per year:</label>
+							    <div class="col-sm-6">
+							      <input type="text" class="form-control" id="inputPassword3" placeholder="">
+							    </div>
+							  </div>
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">Story in Travel:</label>
+							    <div class="col-sm-6">
+							      <textarea rows="3" class="form-control" placeholder="A short story in your travel experience."></textarea>
+							    </div>
+							  </div>
+					    </div>
+						<div class="tab-pane" id="tab3">
+							<div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Destination:</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                                </div>
+                              </div>
+                            <div class="form-group">
+							    <label for="name"  class="col-sm-2 control-label">Your plan:</label>
+							    <div class="col-sm-6">
+							      <textarea rows="3" class="form-control"></textarea>
+							    </div>
+							  </div>
+					    </div>
+					</div>
+				</div>
+                </form>
+			</section>
+	</div>
+    </section>
+
+    <section id="footer" style='height:120px'>
+        <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top:-70px">
+                        <span style="color: #acadaf; position: absolute; left: 18px; top: 0; font-size: 14pt; text-align: left; font-family: FontAwesome;color:rgb(47,120,204)"></span>
+                    <input type="email" style="text-indent: 26px; border-top:0; border-right: 0; border-bottom: 1px solid rgb(47,120,204); border-left:0; color: #82ACC4; width: 100%; font-family: 'adobe-garamond-pro', Garamond, 'Hoefler Text', 'Times New Roman', serif; font-weight: 300; font-size: 14pt; font-style: italic; text-align:left;color:rgb(47,120,204)" value="" name="EMAIL" class="email" id="mce-EMAIL" required="">
+                    <label style="display: block; width: 100%; font-family: 'museo-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12pt; color:rgb(47,120,204);font-weight: 300;;font-style:normal" >Join Our Mailing List</label>
+                </div>
+        <div class="container">
+                
+                <hr style="width:1100PX; max-width:2000px;border-width: 1px;">
+                
+                <div class="col-lg-4 col-lg-offset-1" style="width:950px;font-weight:300;">
+                    <span style="color:rgb(100,200,255);float:left;">© 2015  <a href="index.html">On the Road</a></span>
+                    <span>
+                        <a href="#" style="margin-left:200px;font-size:15pt">About&nbsp;Us</a>
+                        <a href="contact.html" style="margin-left:50px;font-size:15pt">Contact&nbsp;Us</a>
+                    </span>
+                    <p style='float:right'>
+                        <a href='#'><i class="fa fa-instagram"></i></a>
+                        <a href='#'><i class="fa fa-facebook-square"></i></a>
+                        <a href='#'><i class="fa fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa fa-github-square"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square"></i></a>
+
+                    </p>
+                </div>
+        </div>
+    </section>
+    
+    <!--modal!-->
+    <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="form-group">
+                <label for="keyword" class="col-sm-3 control-label">Username:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter Username">
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label for="keyword" class="col-sm-3 control-label">Password:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter password">
+                </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+                <label class="col-sm-3 control-label"></label>
+                <div class="col-sm-8">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="free" value="true"> <b>Remember me</b></label>
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label"></label>
+              <div class="col-sm-8">
+                <button id="signin" name="signin" class="btn login" style="margin-top:7px">Sign In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="form-group">
+                <label for="keyword" class="col-sm-3 control-label">Email:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter Email">
+                </div>
+            </div>
+            <!-- Password input-->
+            <div class="form-group">
+                <label for="keyword" class="col-sm-3 control-label">Password:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="keyword" class="col-sm-3 control-label">Re-enter:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" name="keywords" id="keywords" placeholder="Re-enter password">
+                </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="confirmsignup"></label>
+              <div class="col-sm-8">
+                <button id="confirmsignup" name="confirmsignup" class="btn login">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer" align="center">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--modal!-->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.bootstrap.wizard.js"></script>
+	<script src="js/prettify.js"></script>
+	<script>
+	$(document).ready(function() {
+	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+			var $total = navigation.find('li').length;
+			var $current = index+1;
+			var $percent = ($current/$total) * 100;
+			$('#rootwizard').find('.bar').css({width:$percent+'%'});
+		}});
+		$('#rootwizard .finish').click(function() {
+			alert('Finished!, Starting over!');
+			$('#rootwizard').find("a[href*='tab1']").trigger('click');
+		});
+		window.prettyPrint && prettyPrint()
+	});
+        function contact(){
+            document.getElementById("form").innerHTML="<fieldset style='padding:180px 0 0 320px'><div class='col-lg-7'><div class='col-md-13'><div class='alert alert-success' style='width:350px;font-size:20px;margin-left:43px'><strong><span class='glyphicon glyphicon-ok'  style='padding-left:10px'></span> &nbsp;&nbsp;&nbsp;Success! Profile saved.</strong></div><p style='text-align:center;padding-left:10px'>Thank you! <br/>We will recommand interesting blogs according to your profile.</p><div class='error-actions' style='padding-left:70px'><a href='destination.html' class='btn btn-primary btn-lg'><span class='glyphicon glyphicon-start'></span> Start your Journey Now! </a></div></div></div></fieldset>";
+            $('#body').css('height','300px');
+            $('#fin').hide()
+        }
+	</script>
+</body>
+
+</html>
